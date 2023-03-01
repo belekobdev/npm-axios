@@ -24,9 +24,9 @@ searchInput.addEventListener("keydown", (e) => {
         task(`name/${searchInput.value}`)
     }
 })
-searchInput.addEventListener("input", (e) => [
+searchInput.addEventListener("input", (e) => {
     task(`name/${e.target.value}`)
-])
+})
 searchBtn.addEventListener("click", () => {
     task(`name/${searchInput.value}`)
 })
